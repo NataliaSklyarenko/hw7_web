@@ -93,4 +93,10 @@ if __name__ == "__main__":
             remove_record(Group, args.id)
         elif args.model == "Teacher":
             remove_record(Teacher, args.id)
+        elif args.model == "Subject":
+            remove_record(Subject, args.id)
+        elif args.model == "Grade":
+            print("Оцінки видаляються автоматично при видаленні студента або предмету")
+
+    session.close()
         
